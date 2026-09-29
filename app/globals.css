@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../vendor/shadcn-tailwind-4.13.0.css";
+
+:root {
+  --background: #f5f7fa;
+  --foreground: #152238;
+  --card: #ffffff;
+  --card-foreground: #152238;
+  --popover: #ffffff;
+  --popover-foreground: #152238;
+  --primary: #155bd7;
+  --primary-foreground: #ffffff;
+  --secondary: #eef2f7;
+  --secondary-foreground: #25334a;
+  --muted: #eef2f7;
+  --muted-foreground: #6d788a;
+  --accent: #eaf1ff;
+  --accent-foreground: #155bd7;
+  --destructive: #c93f46;
+  --border: #dfe5ed;
+  --input: #d6dde8;
+  --ring: #5d8fe4;
+  --radius: 0.75rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: "Yu Gothic UI", "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-sans); }
+button, input, textarea { font: inherit; }
+code { border-radius: 0.3rem; background: rgb(21 34 56 / 8%); padding: 0.1rem 0.35rem; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 0.86em; }
+::selection { background: #cfe0ff; color: #123a7d; }
