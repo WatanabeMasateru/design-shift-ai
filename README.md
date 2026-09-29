@@ -19,10 +19,12 @@
 ```bash
 npm install
 copy .env.example .env.local
-npm run dev
+npm run dev:next
 ```
 
 表示されたローカルURLをブラウザで開いてください。Windows以外では `copy` の代わりに `cp` を使用します。
+
+`npm run dev` はCloudflare Workers互換のローカル環境での確認用です。Windows環境でWorkersランタイムが起動しない場合も、`npm run dev:next` で画面とAPIルートをローカル確認できます。
 
 本番相当のビルド確認：
 
